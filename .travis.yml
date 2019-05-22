@@ -14,7 +14,7 @@ matrix:
 
 
 install:
-  - pip install tox-travis flake8 coveralls
+  - pip install poetry tox-travis flake8 coveralls
 
 script:
   - tox
