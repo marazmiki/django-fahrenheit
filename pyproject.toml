@@ -23,7 +23,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 geoip2 = "^2.9"
 django-generic-helpers = "^1.0"
 
