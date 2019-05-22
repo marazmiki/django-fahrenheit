@@ -1,0 +1,9 @@
+.tox/
+.idea/
+.pytest_cache/
+pip-wheel-metadata/
+db.sqlite3
+.coverage
+*.pyc
+htmlcov/
+dist/
