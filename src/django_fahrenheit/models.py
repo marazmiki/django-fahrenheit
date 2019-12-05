@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.utils.timezone import now
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from generic_helpers.fields import GenericRelationField
 
 from .settings import enable_added_by
