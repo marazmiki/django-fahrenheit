@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "django-fahrenheit"
-version = "0.1.2"
-description = ""
+version = "0.1.3"
+description = "A tool for easily restrict access to some project URLs or even objects for legal reasons."
 authors = [
     "Mikhail Porokhovnichenko <marazmiki@gmail.com>"
 ]
-# Look, mom: https://pypi.org/pypi?%3Aaction=list_classifiers
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Web Environment",
@@ -23,6 +22,12 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://github.com/marazmiki/django-fahrenheit"
+repository = "https://github.com/marazmiki/django-fahrenheit"
+keywords = ["django", "fahrenheit", "451", "government", "censorship", "legal", "restriction", "deny"]
+
 
 [tool.poetry.dependencies]
 python = "^3.6"
