@@ -60,7 +60,10 @@ def url_is_blocked(request, url):
 
 
 def object_is_blocked(request, content_object):
-    country = get_country(request)
+    try:
+        country = get_country(request)
+    except CountryNotFound:
+        return False
     claims = Object.objects.filter(Q(country_code__icontains=country) |
                                    Q(country_code=None),
                                    content_object=content_object)

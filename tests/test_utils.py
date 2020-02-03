@@ -41,13 +41,15 @@ def test_extract_ip(remote_addr, forwarded_for, expected_value):
         ('CH', ['RU', 'US'], False),
         ('RU', ['RU'], True),
         ('RU', ['RU', 'US'], True),
+        ('', [], False),
     ],
     ids=[
         'not blocked if there is no entry for the object',
         'not blocked if there is an another country entry for the object',
         'not blocked if there are other country entries for the object',
         'blocked if there is an entry for the same country',
-        'blocked if there are some entries including the request\'s country'
+        'blocked if there are some entries including the request\'s country',
+        'not blocked if could not detect a country',
     ]
 )
 def test_object_is_blocked(current_country, blocked_countries, expected):
