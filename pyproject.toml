@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-fahrenheit"
-version = "0.1.3"
+version = "0.1.4"
 description = "A tool for easily restrict access to some project URLs or even objects for legal reasons."
 authors = [
     "Mikhail Porokhovnichenko <marazmiki@gmail.com>"
